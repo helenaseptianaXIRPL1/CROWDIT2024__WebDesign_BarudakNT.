@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Learning Tekin</title>
+
+    <!--My Style-->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/profile.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
+          0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--My Style-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <!--Start Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top shadow-sm">
+      <div class="container d-flex justify-content-between">
+    
+        <a href="dashboard.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <img src="/assets/images/logo1.png" alt="mdo" width="60" height="60" class="rounded-circle">
+          <span class="ms-3 text-center">NT University</span>
+        </a>
+        <div class="ms-5 ps-3"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsDropdown" aria-controls="navbarsDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarsDropdown">
+          <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="./dashboard.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./schedule/index.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./forum/index.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./payment/index.html">Payment</a>
+            </li>
+          </ul>
+    
+          <div class="dropdown ms-auto">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--End Navbar-->
+
+    <!--Start Breadcrumb-->
+    <div class="">
+      <nav class="my-4 ms-5 " aria-label="breadcrumb ">
+        <ol class="breadcrumb container">
+          <li class="breadcrumb-item"><a href="../dashboard.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Profile</li>
+        </ol>
+      </nav>
+    </div>
+      <!--End Breadcrumb-->
+
+      <!--Start heading-->
+      <div class="container text">
+        <h2>Profile</h2>
+      </div>
+      <br />
+      <hr />
+      <!--End heading-->
+
+      <div class="profile-container">
+        <div class="sidebar">
+          <div class="photo-section">
+            <div class="photo-placeholder">
+              <img id="profileImage" src="/assets/images/user (1).png" alt="Profile Photo"/>
+            </div>
+            <input type="file" id="photoInput" style="display: none" />
+            <button class="edit-photo-btn" onclick="document.getElementById('photoInput').click();">
+              Edit Photo
+            </button>
+          </div>
+        </div>
+       
+
+        <div class="content-profile">
+          <h1>Personal Data</h1>
+          <br>
+          <br>
+          <form id="profile-form">
+            <div class="form-group">
+              <label for="name">Nama*</label>
+              <input type="text" id="name" name="name" value="Rumsyah"
+                required/>
+            </div>
+            <div class="form-group">
+              <label for="name">NPM*</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value="137000"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="birthplace">Prodi</label>
+              <input
+                type="text"
+                id="birthplace"
+                name="birthplace"
+                value="Teknologi Informasi - S1"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="birthplace">Kelas</label>
+              <input
+                type="text"
+                id="birthplace"
+                name="birthplace"
+                value="A"
+                required
+              />
+            </div>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div class="form-group">
+              <label for="email">Username*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value="1370000"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="nik">Password*</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value="3271015309040005"
+                required
+              />
+              </div>
+
+          <br>
+
+            <button type="submit" class="save-button">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script>
+      feather.replace();
+    </script>
+  
+    <script src="/assets/js/interactive-ui.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
