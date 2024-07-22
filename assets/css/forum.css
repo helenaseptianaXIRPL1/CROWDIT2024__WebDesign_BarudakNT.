@@ -1,0 +1,179 @@
+/* Gaya umum */
+
+main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+.forum-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar-forum {
+    background-color: #b3e0ff;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar-forum h1 {
+    margin: 0;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 10px;
+    background-color: #e6f7ff;
+    border-right: 1px solid #b3e0ff;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.active-light {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00ff00;
+    margin-right: 10px;
+}
+
+.member-info {
+    font-size: 12px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.announcement {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+}
+
+.announcement-info {
+    font-size: 14px;
+}
+
+.comments-section {
+    margin-bottom: 20px;
+}
+
+.comment {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-text {
+    margin: 5px 0;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.like-button,
+.delete-button,
+.report-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.like-button.active {
+    color: #ff0000;
+}
+
+.report-button {
+    position: relative;
+}
+
+.report-count {
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+.add-comment {
+    display: flex;
+    align-items: center;
+}
+
+.add-comment input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #b3e0ff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#custom-reason {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    border: 1px solid #b3e0ff;
+    border-radius: 5px;
+    padding: 10px;
+}

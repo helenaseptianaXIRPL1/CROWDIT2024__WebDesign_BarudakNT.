@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statistics and Probability</title>
+
+  <!--My Style-->
+  <link rel="stylesheet" href="css.css" />
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
+    0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!--My Style-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" >
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+    .card-body .btn {
+      margin-top: auto;
+    }
+    .card {
+      margin-bottom: 20px; /* Add some space between cards */
+      width: 100%; /* Set the width of the card */
+      margin: 0 auto; /* Center the card horizontally */
+    }
+    .card-header {
+      background-color: #0078f0; /* Warna latar belakang header */
+      color: aliceblue;
+      width: 100%; /* Pastikan lebar header penuh */
+      font-size: large;
+      font-weight: bold;
+    }
+    .sidebar-card {
+      height: 100%;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .card {
+        height: auto; /* Make height auto on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top shadow-sm">
+    <div class="container d-flex justify-content-between">
+  
+      <a href="/pages/dashboard.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <img src="/assets/images/logo1.png" alt="mdo" width="60" height="60" class="rounded-circle">
+        <span class="ms-3 text-center">NT University</span>
+      </a>
+      <div class="ms-5 ps-3"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsDropdown" aria-controls="navbarsDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarsDropdown">
+        <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/pages/dashboard.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/schedule/index.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/forum/index.html">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/payment/index.html">Payment</a>
+          </li>
+        </ul>
+  
+        <div class="dropdown ms-auto">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="/pages/profile.html">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/pages/login.html">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a style="text-decoration-line: none;" href="#">Home</a></li>
+        <li class="breadcrumb-item"><a style="text-decoration-line: none;" href="#">Course</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Statistics and Probability</li>
+      </ol>
+    </nav>
+
+    <br>
+    <h3>Course</h3>
+
+    <hr>
+    <br>
+
+    <div class="row">
+      <!-- Sidebar content -->
+      <div class="col-md-3">
+        <div class="card sidebar-card" style="background-color: rgb(34, 34, 167); color: azure;">
+          <div class="card-body">
+            <h4 class="card-header-1 text-center" style="color: rgb(236, 222, 19);">Information</h4>
+            <hr>
+            <ul style="list-style-type: none; padding: 0; margin: 0;" >
+              <li class="list-group-item-1  text-center pb-3 pt-4"> Course</li>
+              <li class="list-group-item-1 text-center pb-3 pt-4"> Course</li>
+              <li class="list-group-item-1 text-center pb-3 pt-4"> Course</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <div class="col-md-9">
+        <h4>Statistics and Probability</h4>
+        <br>
+        <div class="row">
+          <div class="col-md-12 col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-header">Pertemuan 1</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item pb-3 pt-4">
+                    <img src="pdf.png" width="30px" alt="">
+                    <a href="../Fitur tgs/index.html" style="text-decoration-line: none;"> Konsep Statistics and Probability</a>
+                  </li>
+                  <li class="list-group-item pb-3 pt-4">
+                    <img src="nulis (1).png" width="35px" alt="">
+                    <a href="../Fitur tgs/index.html" style="text-decoration-line: none;"> Konsep Statistics and Probability</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-header">Pertemuan 2</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item pb-3 pt-4">
+                    <img src="pdf.png" width="30px" alt="">
+                    <a href="../Fitur tgs/index.html" style="text-decoration-line: none;"> Materi</a>
+                  </li>
+                  <li class="list-group-item pb-3 pt-4">
+                    <img src="pdf.png" width="35px" alt="">
+                    <a href="../Fitur tgs/index.html" style="text-decoration-line: none;"> Materi</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-6 mb-3">
+          <div class="card">
+            <div class="card-header">Pertemuan 3</div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item pb-3 pt-4">
+                  <img src="pdf.png" width="30px" alt="">
+                  <a href="../Fitur tgs/index.html" style="text-decoration-line: none;"> Materi</a>
+                </li>
+                <li class="list-group-item pb-3 pt-4">
+                  <img src="pdf.png" width="35px" alt="">
+                  <a href="../Fitur tgs/index.html" style="text-decoration-line: none;"> Materi</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white">
+    <div class="container">
+        <div class="border-bottom border-secondary pt-4"></div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="">© 2024 BarudakNT, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-instagram fa-3x"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-facebook fa-3x"></i></a></li>
+          </ul>
+        </footer>
+      </div>
+  </div>
+
+  <script>
+    feather.replace();
+  </script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Tekin</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main>
+    
+      <div id="loading" class="d-flex justify-content-center align-items-center vh-100 position-fixed bg-light">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+
+      <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top shadow-sm">
+        <div class="container d-flex justify-content-between">
+      
+          <a href="dashboard.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+            <img src="/assets/images/logo1.png" alt="mdo" width="60" height="60" class="rounded-circle">
+            <span class="ms-3 text-center">NT University</span>
+          </a>
+          <div class="ms-5 ps-3"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsDropdown" aria-controls="navbarsDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarsDropdown">
+            <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="./dashboard.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./schedule/index.html">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./forum/index.html">Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./payment/index.html">Payment</a>
+              </li>
+            </ul>
+      
+            <div class="dropdown ms-auto">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+
+        <div class="">
+          <div class="bg-low-poly2">
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="../assets/images/Why_students_should_choose_an_International_Foundation_Programme__IFP_-removebg-preview 2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold lh-1 ">Selamat Datang <span id="usernameDisplay"></span>!</h1>
+                  <!-- <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p> -->
+                  <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="menu">
+          <div class="p-3" style="margin-top: -50px;">
+            <div class=" d-grid gap-2 d-sm-flex justify-content-sm-around">
+              <a class="btn btn-lg px-4 gap-3 d-flex align-items-center justify-content-center text-decoration-none" href="./course/Course.html" style="background-color: #86469C; color: white;">
+                <i class="fa-sharp fa-solid fa-book fa-2x"></i>
+                <span class="ms-1 mb-0">Course</span>
+              </a>
+              
+
+              <a class="btn btn-lg px-4 gap-3 d-flex align-items-center justify-content-center text-decoration-none" href="./Absensi/index.html" style="background-color: #86469C; color: white;">
+                <i class="fa-sharp fa-solid fa-book-open fa-2x"></i>
+                <span class="ms-1 mb-0">Absensi</span>
+              </a>
+              
+
+              <a class="btn btn-lg px-4 gap-3 d-flex align-items-center justify-content-center text-decoration-none" href="./payment/index.html" style="background-color: #86469C; color: white;">
+                <i class="fa-solid fa-calculator fa-2x"></i>
+                <span class="ms-1 mb-0">Payment</span>
+              </a>
+
+            </div>
+        </div>
+        </section>
+
+        <div>
+            <div id="content">
+                <!-- Content from different pages -->
+                <div class="container text-center mt-5">
+                  <h2>Next Agenda</h2>
+                  <br>
+                  <div class="row justify-content-around gap-5 gap-md-0">
+                      <div class="col-md-4">
+                          <div class="agenda-card">
+                              <img src="/assets/images/WhatsApp Image 2024-07-22 at 17.16.27.jpeg" alt="Course Image">
+                              <div class="p-3">
+                                  <h5>Sistem Manajemen Database</h5>
+                                  <p><i class="fas fa-clock"></i> 09:00 - 11:00</p>
+                                  <p><i class="fas fa-calendar-alt"></i> Tuesday, 7 July 2024</p>
+                                  <button class="btn join-course-btn">Join Course</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="agenda-card">
+                              <img src="/assets/images/WhatsApp Image 2024-07-22 at 17.16.27.jpeg" alt="Course Image">
+                              <div class="p-3">
+                                  <h5>Sistem Manajemen Database</h5>
+                                  <p><i class="fas fa-clock"></i> 09:00 - 11:00</p>
+                                  <p><i class="fas fa-calendar-alt"></i> Tuesday, 7 July 2024</p>
+                                  <button class="btn join-course-btn">Join Course</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <br><br>
+
+
+
+        <div class="bg-low-poly">
+          <div class="container">
+            <div class="d-flex flex-wrap justify-content-around ">
+
+              <div class="col-md-5 d-flex justify-content-center align-items-center">
+                <img src="/assets/images/OBJECTS.png" alt="Girl at laptop" class="img-fluid" style="max-height: 400px;">
+              </div>
+
+              <div class="bg-white col-md-4 px-5 my-5 announcement-box d-flex flex-column align-items-center rounded shadow">
+                <h4 class="text-center border-bottom border-3 border-primary my-3">Announcement</h4>
+                <div class="announcements w-100">
+                  <div class="gap-2 d-flex align-items-center mb-3">
+                    <div class="mr-2">
+                      <img src="/assets/images/Group 349.png" alt="Task icon" style="max-height: 40px;" class="">
+                    </div>
+                    <div>
+                      <strong>Tugas</strong><br>
+                      Algoritma - Membuat Website
+                    </div>
+                  </div>
+                  <div class="gap-2 d-flex align-items-center">
+                    <div class="mr-2">
+                      <img src="/assets/images/Group 349.png" alt="Task icon" style="max-height: 40px;" class="">
+                    </div>
+                    <div>
+                      <strong>Tugas</strong><br>
+                      Learning Will Feel Very Comfortable With Courslab.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container mt-5">
+          <div class="d-flex flex-wrap justify-content-around">
+            <div class="col-12 col-md-5 p-4  rounded shadow mb-3 mb-md-0 me-md-3"> <!-- Added 'mb-3' for margin bottom on small screens -->
+              <h2 class="text-center border-bottom border-2 border-primary pb-3">Activity</h2>
+              <br>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Lomba Science</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">Aula Tekin University, Semifinal.</p>
+                  <small>- Infokom NTEKIN.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Pelantikan Rektor</h5>
+                    <small class="text-muted">6 days ago</small>
+                  </div>
+                  <p class="mb-1">Diselengarakan di Aula Fekbis.</p>
+                  <small class="text-muted">- UKM.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Some placeholder content in a paragraph.</p>
+                  <small class="text-muted">And some muted small print.</small>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 rounded p-4 shadow">
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+        </div>
+        <br>
+        <div class="bg-white">
+          <div class="container">
+              <div class="border-bottom border-secondary pt-4"></div>
+              <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                  </a>
+                  <span class="">© 2024 BarudakNT, Inc</span>
+                </div>
+            
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-instagram fa-3x"></i></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-facebook fa-3x"></i></a></li>
+                </ul>
+              </footer>
+            </div>
+        </div>
+    </main>
+
+    <script>
+              
+        var username = localStorage.getItem('username');
+
+        
+        document.getElementById('usernameDisplay').innerText = username;
+    </script>
+    <script src="/assets/js/loading.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('#calendar').fullCalendar({
+            defaultView: 'month',
+            events: [
+              {
+                title: 'UAS',
+                start: '2024-07-15',
+                end: '2024-07-20'
+              },
+              {
+                title: 'Liburan Semester',
+                start: '2024-07-22'
+              }
+            ]
+          });
+        });
+      </script>
+</body>
+</html>

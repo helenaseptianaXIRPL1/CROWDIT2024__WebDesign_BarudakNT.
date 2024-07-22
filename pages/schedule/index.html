@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning TEKIN</title>
+
+    <link rel="stylesheet" href="/assets/css/schedule.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+  <div id="loading" class="d-flex justify-content-center align-items-center vh-100 position-fixed bg-light">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top shadow-sm">
+      <div class="container d-flex justify-content-between">
+    
+        <a href="../dashboard.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <img src="/assets/images/logo1.png" alt="mdo" width="60" height="60" class="rounded-circle">
+          <span class="ms-3 text-center">NT University</span>
+        </a>
+        <div class="ms-5 ps-3"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsDropdown" aria-controls="navbarsDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarsDropdown">
+          <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="../dashboard.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../schedule/index.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../forum/index.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../payment/index.html">Payment</a>
+            </li>
+          </ul>
+    
+          <div class="dropdown ms-auto">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="../profile.html">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../login.html">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="">
+      <nav class="my-4 ms-5 " aria-label="breadcrumb ">
+        <ol class="breadcrumb container">
+          <li class="breadcrumb-item"><a href="../dashboard.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+        </ol>
+      </nav>
+    </div>
+
+      
+<div class="calender-stuff">
+  <div class="calendar-container">
+    <h1>KALENDER AKADEMIK NT UNIVERSITY</h1>
+    <div class="navbar">
+        <button id="prev-month">&lt; </button>
+        <h2 id="month-name">Januari</h2>
+        <button id="next-month"> &gt;</button>
+    </div>
+    <table id="calendar">
+        <!-- Calendar headers -->
+        <thead>
+            <tr>
+                <th>Minggu</th>
+                <th>Senin</th>
+                <th>Selasa</th>
+                <th>Rabu</th>
+                <th>Kamis</th>
+                <th>Jumat</th>
+                <th>Sabtu</th>
+            </tr>
+        </thead>
+        <tbody id="calendar-body">
+            <!-- Calendar days will be inserted here -->
+        </tbody>
+    </table>
+    <div id="holiday-list-container">
+        <h3>EVENT!</h3>
+        <ul id="holiday-list">
+            <!-- Holiday list will be inserted here -->
+        </ul>
+    </div>
+</div>
+
+<div id="holiday-popup" class="popup">
+    <div class="popup-content">
+        <span id="close-popup" class="close">&times;</span>
+        <p id="holiday-text"></p>
+    </div>
+</div>
+</div>
+
+<div class="bg-white">
+  <div class="container">
+      <div class="border-bottom border-secondary pt-4"></div>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="">© 2024 BarudakNT, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-instagram fa-3x"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-facebook fa-3x"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+</div>
+
+    <script src="/assets/js/loading.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

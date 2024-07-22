@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Diskusi</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/forum.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div id="loading" class="d-flex justify-content-center align-items-center vh-100 position-fixed bg-light">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top shadow-sm">
+        <div class="container d-flex justify-content-between">
+      
+          <a href="../dashboard.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+            <img src="/assets/images/logo1.png" alt="mdo" width="60" height="60" class="rounded-circle">
+            <span class="ms-3 text-center">NT University</span>
+          </a>
+          <div class="ms-5 ps-3"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsDropdown" aria-controls="navbarsDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarsDropdown">
+            <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="../dashboard.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../schedule/index.html">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../forum/index.html">Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../payment/index.html">Payment</a>
+              </li>
+            </ul>
+      
+            <div class="dropdown ms-auto">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="../profile.html">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../login.html">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <nav class="my-4 ms-5" aria-label="breadcrumb ">
+        <ol class="breadcrumb container">
+          <li class="breadcrumb-item"><a href="../dashboard.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Forum</li>
+        </ol>
+      </nav>
+
+    <main>
+        <div class="forum-container">
+
+            <div class="navbar-forum">
+                <h1>Nama Mata Kuliah: Pemrograman Web</h1>
+    
+            </div>
+            <div class="content-container">
+                <div class="sidebar">
+                    <h2>Anggota Aktif</h2>
+                    <div class="member">
+                        <div class="active-light"></div>
+                        <p class="member-info">Beni - NPM 1234567890</p>
+                    </div>
+                    <div class="member">
+                        <div class="active-light"></div>
+                        <p class="member-info">Ayu - NPM 1234567891 </p>
+                    </div>
+                    <div class="member">
+                        <div class="active-light"></div>
+                        <p class="member-info">Dani - NPM 1234567894</p>
+                    </div>
+                    <div class="member">
+                        <div class="active-light"></div>
+                        <p class="member-info">Ella - NPM 1234567895</p>
+                    </div>
+                    <div class="member">
+                        <div class="active-light"></div>
+                        <p class="member-info">Fani - NPM 1234567896</p>
+                    </div>
+                    <div class="member">
+                        <div class="active-light"></div>
+                        <p class="member-info">Ika NPM 1234567899</p>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="announcement">
+                        <h2>Pengumuman Dosen</h2>
+                        <div class="announcement-info">
+                            <p>Nama Dosen: Dr. Ananda Wijaya</p>
+                            <p>Topik: HTML dan CSS Dasar</p>
+                        </div>
+                        <ul>
+                            <li><a href="https://zoom.us/j/1234567890" target="_blank">Link Zoom Meeting</a></li>
+                            <li><a href="file.pdf" target="_blank">File PDF</a></li>
+                            <li><a href="file.docx" target="_blank">File Word</a></li>
+                        </ul>
+                    </div>
+                    <div class="comments-section" id="comments-section">
+                        <h2>Diskusi</h2>
+                        <div class="comment" data-comment-id="1" data-post-time="1689915600000">
+                            <p class="comment-author">Agus</p>
+                            <p class="comment-text">Bagaimana cara membuat form di HTML?</p>
+                            <p class="comment-time">Komentar diposting 1 menit yang lalu</p>
+                            <button class="like-button" onclick="likeComment(this)">Suka <span class="like-count">0</span> ❤️</button>
+                            <button class="delete-button" onclick="deleteComment(this)">Hapus</button>
+                            <button class="report-button" onclick="openReportModal(this)">
+                                Laporkan <span class="report-count">0</span>
+                            </button>
+                        </div>
+                        <div class="comment" data-comment-id="2" data-post-time="1689912000000">
+                            <p class="comment-author">Sari</p>
+                            <p class="comment-text">Apa itu CSS Grid?</p>
+                            <p class="comment-time">Komentar diposting 1 jam yang lalu</p>
+                            <button class="like-button" onclick="likeComment(this)">Suka <span class="like-count">0</span> ❤️</button>
+                            <button class="delete-button" onclick="deleteComment(this)">Hapus</button>
+                            <button class="report-button" onclick="openReportModal(this)">
+                                Laporkan <span class="report-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="add-comment">
+                        <input type="text" id="comment-input" placeholder="Tambahkan komentar...">
+                        <button onclick="addComment()">Kirim</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white">
+                <div class="container">
+                    <div class="border-bottom border-secondary pt-4"></div>
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                        </a>
+                        <span class="">© 2024 BarudakNT, Inc</span>
+                      </div>
+                  
+                      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-instagram fa-3x"></i></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-facebook fa-3x"></i></a></li>
+                      </ul>
+                    </footer>
+                  </div>
+              </div>
+
+
+        </div>
+    
+        <!-- Modal Laporkan -->
+        <div id="report-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeReportModal()">&times;</span>
+                <h2>Laporkan Komentar</h2>
+                <form id="report-form">
+                    <input type="hidden" id="report-comment-id">
+                    <label>
+                        <input type="radio" name="report-reason" value="spam" required>
+                        Spam
+                    </label>
+                    <label>
+                        <input type="radio" name="report-reason" value="kata-kata tidak pantas">
+                        Kata-kata Tidak Pantas
+                    </label>
+                    <label>
+                        <input type="radio" name="report-reason" value="berkata kasar">
+                        Berkata Kasar
+                    </label>
+                    <label>
+                        <input type="radio" name="report-reason" value="lainnya">
+                        Lainnya
+                    </label>
+                    <div id="custom-reason-container" class="hidden">
+                        <textarea id="custom-reason" placeholder="Isi alasan lain..."></textarea>
+                    </div>
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </div>
+
+        
+        
+    </main>
+
+
+    <script src="/assets/js/loading.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+
+</html>
